@@ -723,6 +723,8 @@ GUARD_DEFINE(StartTest, NoEventData)
 
 <p>Comments indicate where the lock and unlock should be placed if the application is multithreaded&nbsp;<em>and</em> mutiple threads are able to access a single state machine instance. Note that each <code>StateMachine </code>object should have its own instance of a software lock. This prevents a single instance from locking and preventing all other <code>StateMachine </code>objects from executing. Software locks are only required if a <code>StateMachine </code>instance is called by multiple threads of control. If not, then locks are not required.</p>
 
+<p>To enable the use of locks define USE_LOCKS in the compilation process. E.g.: -DUSE_LOCKS</p>
+
 <ul>
 </ul>
 

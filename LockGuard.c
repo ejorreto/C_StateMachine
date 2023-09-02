@@ -1,3 +1,5 @@
+#ifdef USE_LOCKS
+
 #include "LockGuard.h"
 #include "Fault.h"
 #include <mutex>
@@ -43,4 +45,6 @@ void LK_Unlock(LOCK_HANDLE hLock)
     LOCK* lock = (LOCK*)(hLock);
     lock->unlock();
 }
+
+#endif /* USE_LOCKS */
 
