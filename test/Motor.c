@@ -21,10 +21,10 @@ STATE_DECLARE(ChangeSpeed, MotorData)
 
 // State map to define state function order
 BEGIN_STATE_MAP(Motor)
-    STATE_MAP_ENTRY(ST_Idle)
-    STATE_MAP_ENTRY(ST_Stop)
-    STATE_MAP_ENTRY(ST_Start)
-    STATE_MAP_ENTRY(ST_ChangeSpeed)
+    STATE_MAP_ENTRY(Idle)
+    STATE_MAP_ENTRY(Stop)
+    STATE_MAP_ENTRY(Start)
+    STATE_MAP_ENTRY(ChangeSpeed)
 END_STATE_MAP(Motor)
 
 // Set motor speed external event
